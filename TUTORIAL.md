@@ -118,3 +118,20 @@ function addPriceToPage(price){
 ```
 In order to remove the $ sign from the return value, we use the <a href="http://www.jquerybyexample.net/2012/03/how-to-substring-in-jquery.html">substring</a> method. We then explicitly return `price`.
 
+###`on-click.js`
+
+In order to make our code run, we need to set up our `on-click.js` file, which will run our code on click.
+
+
+```
+"use strict";
+
+$(document).ready(function() {
+  $('#calc').click(function() {
+    fetchEndPrice(addPriceToPage);
+  });
+});
+```
+Here `.click` lets us bind an event handler to the "click" JavaScript event, or trigger that event on an element. 
+
+When the user clicks on our button with the id `#calc`, the event is triggered. It calls `fetchEndPrice` and passes in the `addPriceToPage` callback when it returns.
