@@ -116,3 +116,5 @@ function addPriceToPage(price){
   return price;
 }
 ```
+In order to remove the $ sign from the return value, we use the <a href="http://www.jquerybyexample.net/2012/03/how-to-substring-in-jquery.html">substring</a> method. We then explicitly return `price`.
+
