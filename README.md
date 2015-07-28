@@ -1,10 +1,3 @@
----
-language: JavaScript, js
-tags: selectors, jquery, ajax, json, api, getJSON
-type: lab
-resources: 5
----
-
 # jQuery Inflation Calculator
 
 ![inflated dollar](https://s3-us-west-2.amazonaws.com/web-dev-readme-photos/js/inflation.jpg)
